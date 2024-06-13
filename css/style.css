@@ -1,0 +1,77 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-style: italic;
+}
+header, footer {
+    background-color: #1e1d1f;
+    color: #ebdd1d;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #2585d4;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px; /* Espacio entre las columnas */
+}
+
+.grid-item {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc; 
+  }
+
+
+  .grid-item img {
+    width: 100%; /* Las imágenes ocuparán el ancho completo del contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+  }
+
+
